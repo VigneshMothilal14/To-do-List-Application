@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parentContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(105, 105, 255), pink);
+}
+
+.parentContainer > .container {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 30em;
+    height: 30em;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.parentContainer > .container > h1 {
+    margin-top: 1em;
+    color: brown;
+}
+.parentContainer > .container > .taskAdding  {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.parentContainer > .container > .taskAdding > input {
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:rgb(255, 251, 247);
+    color: brown;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.parentContainer > .container > .taskAdding > button {
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s linear;
+
+} 
+
+.parentContainer > .container > .taskAdding > button:hover {
+   transform: translateY(5px);
+   box-shadow: 3px 3px 5px gray;
+}
+
+.eachTask {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.eachTask > p {
+    font-size: 15px;
+    margin-left: 5px;
+}
+.eachTask > p::before {
+   content: "➡️";
+}
+.endResultsButton {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+}
+.endResultsButton > .completeButton, .removeButton {
+    height: 2em;
+    border: none;
+    padding: 5px;
+    color:  white;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.endResultsButton > .completeButton {
+    background-color: green;
+}
+.endResultsButton > .removeButton {
+   background-color: red;
+}
