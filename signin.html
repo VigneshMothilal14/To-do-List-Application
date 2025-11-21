@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-List Sign up</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+    <div class="parentContainer">
+
+        <div class="container">
+
+            <h1>Sign up</h1>
+
+            <label for="username">Enter your name</label>
+            <input type="text" id="username" name="username" required placeholder="Username">
+
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="password" required placeholder="Password">
+
+            <div class="btn">
+                <button type="submit" id="capchaGenerate">Generate Capcha</button>
+            </div>
+
+            <div class="showCap">
+                <h2 id="showCapcha">----</h2>
+            </div>
+
+            <label for="userEnteredCapcha">Enter capcha</label>
+            <input type="number" id="userEnteredCapcha" name="userEnteredCapcha" placeholder="capcha">
+
+            <div class="btn1">
+                <button type="submit" id="signup">Sign up</button>
+            </div>
+            <h4>Already have an account ? <a href="login.html">Log in</a></h4>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
